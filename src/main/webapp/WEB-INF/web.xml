@@ -1,0 +1,75 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+ version="3.1">
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>welcome</servlet-name> -->
+<!-- 		<servlet-class>com.douineau.servlet.WelcomeServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>welcome</servlet-name> -->
+<!-- 		<url-pattern>/</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>presentation</servlet-name> -->
+<!-- 		<servlet-class>com.douineau.servlet.PresentationServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>presentation</servlet-name> -->
+<!-- 		<url-pattern>/presentation</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>gallerie</servlet-name> -->
+<!-- 		<servlet-class>com.douineau.servlet.GallerieServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>gallerie</servlet-name> -->
+<!-- 		<url-pattern>/gallerie</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>commander</servlet-name> -->
+<!-- 		<servlet-class>com.douineau.servlet.CommanderServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>commander</servlet-name> -->
+<!-- 		<url-pattern>/commander</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+				
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>inscription</servlet-name> -->
+<!-- 		<servlet-class>com.douineau.servlet.FormServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>inscription</servlet-name> -->
+<!-- 		<url-pattern>/inscription</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>livre-d-or</servlet-name> -->
+<!-- 		<servlet-class>com.douineau.servlet.LivreDorServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>livre-d-or</servlet-name> -->
+<!-- 		<url-pattern>/livre-d-or</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+	
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>ecrire</servlet-name> -->
+<!-- 		<servlet-class>com.douineau.servlet.LivreDorWriteServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>ecrire</servlet-name> -->
+<!-- 		<url-pattern>/ecrire</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+	
+	<!-- Welcome file list -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+<!-- 		<welcome-file>index.html</welcome-file> -->
+	</welcome-file-list>
+
+</web-app>
