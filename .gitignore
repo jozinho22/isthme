@@ -1,6 +1,5 @@
 # Eclipse Core      
 .project
-.metadata/
 .settings
 .Servers/
 
@@ -12,6 +11,3 @@ target/
 
 
 .log
-
-.idea/
-.iml
