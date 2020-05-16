@@ -1,5 +1,8 @@
 # Eclipse Core      
 .project
+.metadata/
+.settings
+.Servers/
 
 # JDT-specific (Eclipse Java Development Tools)     
 .classpath
@@ -7,8 +10,8 @@
 # Maven
 target/
 
-.settings
 
 .log
 
 .idea/
+.iml

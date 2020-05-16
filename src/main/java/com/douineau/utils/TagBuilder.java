@@ -16,8 +16,8 @@ public class TagBuilder {
 		StringBuilder sb = new StringBuilder();
 		sb.append("<li class=\"nav-item\">");
 		sb.append("<a class=\"nav-link\" href=\"gestion-avis\">Gérer les posts (");
-                sb.append(avisRestants);
-                sb.append(")</a>");	
+		sb.append(avisRestants);
+		sb.append(")</a>");	
 		sb.append("</li>"); 
 		
 		return sb.toString();

@@ -7,9 +7,9 @@
 	<version>0.0.3</version>
 	<packaging>war</packaging>
 <!-- 	<name>isthme</name> -->
-        <properties>
-            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency>
@@ -72,14 +72,13 @@
 		    <artifactId>jstl</artifactId>
 		    <version>1.2</version>
 		</dependency>
-
 	</dependencies>
 	<build>
 		<!-- <sourceDirectory>src</sourceDirectory> -->
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-                                <version>3.1</version>
+                	<version>3.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
