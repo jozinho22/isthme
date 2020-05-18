@@ -1,6 +1,7 @@
 package com.douineau.servlet.gestion;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,7 +21,10 @@ import com.douineau.entity.Avis;
 public class GestionAvisServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
+	private static List<Avis> avisRestants;
+
+	private Integer index;
+		/**
 	 * @see HttpServlet#HttpServlet()
 	 */
 	public GestionAvisServlet() {
@@ -34,19 +38,33 @@ public class GestionAvisServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-//		Long count = AvisDao.getCount();
-		HttpSession session = request.getSession();
-		Long avisRestants = (Long) session.getAttribute("avisRestants");
-		session.setAttribute("avisRestants", avisRestants);
 		
-		if(avisRestants.intValue() > 0) {
-			Avis latestAvis = AvisDao.getLatestNotReadAvis();
-			request.setAttribute("avis", latestAvis);
-			session.setAttribute("index", 0);
-
-			RequestDispatcher rd = request.getRequestDispatcher("gestion-avis.jsp");
-			rd.forward(request, response);
+		if(avisRestants == null) {
+			avisRestants = AvisDao.get10LatestNotReadAvis();
+			request.setAttribute("index", 0);
+		}
+		
+		if("triAvis".equals(request.getAttribute("action"))) {
+			index = (Integer) request.getAttribute("index");
+			avisRestants.remove(avisRestants.get(index));
+			request.setAttribute("index", index + 1);	
 		} 
+
+		if(avisRestants.size() == 0) {
+			avisRestants = AvisDao.get10LatestNotReadAvis();
+			//S'il n'en reste plus
+			if(avisRestants.size() == 0) {
+				request.removeAttribute("avisRestants");
+				RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
+				rd.forward(request, response);
+			} 
+		}	
+		
+		request.setAttribute("nbAvisRestants", Integer.valueOf(avisRestants.size()));
+		request.setAttribute("avisRestants", avisRestants);
+
+		RequestDispatcher rd = request.getRequestDispatcher("gestion-avis.jsp");
+		rd.forward(request, response);
 
 	}
 

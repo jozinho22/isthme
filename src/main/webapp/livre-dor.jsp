@@ -9,13 +9,13 @@
 		
 		<div id="section" class="container">
 			<!-- Demo header-->
-			<section class="py-5 text-center">
+			<div class="py-5 text-center">
 				<div class="container py-4 text-white">
 					<header>
 						<p class="font-italic mb-1">Voici les derniers avis.</p>
 					</header>
 				</div>
-			</section>
+			</div>
 		
 			<section class="pb-5">
 				<div class="container">

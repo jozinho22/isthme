@@ -33,12 +33,13 @@ public class GestionServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		Long avisRestants = AvisDao.getCount();
+		Integer nbAvisRestants = AvisDao.getCount();
 		HttpSession session = request.getSession();
-		session.setAttribute("avisRestants", avisRestants);
+		session.setAttribute("nbAvisRestants", nbAvisRestants);
 
 		RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
 		rd.forward(request, response);
+		
 		}
 
 	/**

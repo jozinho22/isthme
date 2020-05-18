@@ -1,5 +1,6 @@
 package com.douineau.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -11,7 +12,12 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-public class Avis {
+public class Avis implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7832394758500729981L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -45,13 +45,12 @@ public class LoginServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		
 		if(GestionDao.check(login, password)) {
-			Long avisRestants = AvisDao.getCount();
-			System.out.println("Loggé sous " + login + " : " + password );
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("session-login", login);
-//			session.setAttribute("count", count);
-			session.setAttribute("avisRestants", avisRestants);
+			
+			Integer nbAvisRestants = AvisDao.getCount();
+			session.setAttribute("nbAvisRestants", nbAvisRestants);
 			
 			RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
 			rd.forward(request, response);

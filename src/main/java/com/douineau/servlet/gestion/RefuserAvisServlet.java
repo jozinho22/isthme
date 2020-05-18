@@ -44,27 +44,27 @@ public class RefuserAvisServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 	
-		String id = request.getParameter("id");
-		
-		AvisDao.delete(id);
-		
-		Long avisRestants = AvisDao.getCount();
-		HttpSession session = request.getSession();
-		session.setAttribute("avisRestants", avisRestants);
-		
-		Integer index = (Integer) session.getAttribute("index");
-		
-		if(avisRestants.intValue() > 0) {
-			Avis avis = AvisDao.getLatestNotReadAvis();
-			request.setAttribute("avis", avis);
-			
-			session.setAttribute("index", index - 1);
-			RequestDispatcher rd = request.getRequestDispatcher("gestion-avis.jsp");
-			rd.forward(request, response);
-		} else {
-			RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
-			rd.forward(request, response);
-		}
+//		String id = request.getParameter("id");
+//		
+//		AvisDao.delete(id);
+//		
+//		Long avisRestants = AvisDao.getCount();
+//		HttpSession session = request.getSession();
+//		session.setAttribute("avisRestants", avisRestants);
+//		
+//		Integer index = (Integer) session.getAttribute("index");
+//		
+//		if(avisRestants.intValue() > 0) {
+//			Avis avis = AvisDao.getLatestNotReadAvis();
+//			request.setAttribute("avis", avis);
+//			
+//			session.setAttribute("index", index - 1);
+//			RequestDispatcher rd = request.getRequestDispatcher("gestion-avis.jsp");
+//			rd.forward(request, response);
+//		} else {
+//			RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
+//			rd.forward(request, response);
+//		}
 		
 	}
 

@@ -49,13 +49,13 @@ public class AvisDao {
 
 	}
 	
-	public static Avis getLatestNotReadAvis() {
+	public static List<Avis> get10LatestNotReadAvis() {
 		EntityManager em = PersistenceUtil.getEntityManager();
 		TypedQuery<Avis> query = em.createQuery("SELECT a FROM Avis a WHERE a.toValidate = '1' ORDER BY a.createdAt DESC", Avis.class);
-		List<Avis> avis = query.setMaxResults(1).getResultList();
+		List<Avis> avis = query.setMaxResults(10).getResultList();
 		em.close();
 
-		return avis.get(0);
+		return avis;
 
 	}
 	
@@ -91,14 +91,15 @@ public class AvisDao {
 
 	}
 	
-	public static Long getCount() {
+	public static Integer getCount() {
 		EntityManager em = PersistenceUtil.getEntityManager();
 		em.getTransaction().begin();
 		TypedQuery<Long> query = em.createQuery("SELECT COUNT(a) FROM Avis a WHERE a.toValidate = '1' ", Long.class);
 		Long i = query.getSingleResult();
+		Integer k = i.intValue();
 		em.close();
 		
-		return i ;
+		return k ;
 
 	}
 }

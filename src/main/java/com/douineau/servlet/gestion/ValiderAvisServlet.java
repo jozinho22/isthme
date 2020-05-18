@@ -1,6 +1,7 @@
 package com.douineau.servlet.gestion;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -34,7 +35,6 @@ public class ValiderAvisServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
 	}
 
 	/**
@@ -47,25 +47,11 @@ public class ValiderAvisServlet extends HttpServlet {
 		String id = request.getParameter("id");
 		
 		AvisDao.validateAvis(id);
-	
-		Long avisRestants = AvisDao.getCount();
-		HttpSession session = request.getSession();
-		session.setAttribute("avisRestants", avisRestants);
 		
-		Integer index = (Integer) session.getAttribute("index");
+		request.setAttribute("action", "triAvis");
 		
-		// S'il reste de avis en base
-		if(avisRestants.intValue() > 0) {
-			Avis avis = AvisDao.getLatestNotReadAvis();
-			request.setAttribute("avis", avis);
-			
-			session.setAttribute("index", index - 1);
-			RequestDispatcher rd = request.getRequestDispatcher("gestion-avis.jsp");
-			rd.forward(request, response);
-		} else {
-			RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
-			rd.forward(request, response);
-		}
+		RequestDispatcher rd = request.getRequestDispatcher("gestion-avis");
+		rd.forward(request, response);
 
 	}
 
