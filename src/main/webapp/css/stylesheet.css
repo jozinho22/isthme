@@ -500,13 +500,6 @@ footer {
 	border: 1px solid grey;
 }
 
-#livre-dor-write {
-	margin-top: 150px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
-}
-
 #input-livre-dor, #textarea-livre-dor {
 	background-color: #A9A9A9;
 }
@@ -531,6 +524,14 @@ footer {
 
 #btn-livre-dor-submit:hover, #btn-livre-dor-write:hover {
 	background-color: #202427;
+}
+
+#input-livre-dor {
+	width :30%;
+}
+
+#textarea-livre-dor {
+	width :80%;
 }
 
 /* Livre d'or */

@@ -12,8 +12,7 @@
 			</header>
 		</div>
 	</div>
-	<div id="quote" class="col-lg-10 col-xl-8 mx-auto"
-		style="text-align: center;">
+	<div id="quote" class="col-lg-12 col-xl-10 mx-auto">
 		<div class="carousel-inner px-5 pb-4">
 			<div class="carousel-item active">
 				<blockquote class="blockquote border-0 p-0">

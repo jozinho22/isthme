@@ -21,7 +21,7 @@
 				<div class="container">
 					<div class="row">
 		
-						<div id="quote" class="col-lg-10 col-xl-8 mx-auto">
+						<div id="quote" class="col-lg-12 col-xl-10 mx-auto">
 							<!-- Bootstrap carousel-->
 							<div class="carousel slide" id="carouselExampleIndicators"
 								data-ride="carousel">
