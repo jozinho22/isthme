@@ -73,22 +73,7 @@ h4, h5 {
 }
 
 @media ( max-width : 800px) {
-	#navbar {
-		display: flex;
-		flex-direction: column;
-	}
-	#collapse-menu-nav {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-@media ( max-width : 650px) {
-	#navbar {
-		display: flex;
-		flex-direction: column;
-	}
-	#collapse-menu-nav {
+	#navbar, #collapse-menu-nav {
 		display: flex;
 		flex-direction: column;
 	}
@@ -172,11 +157,11 @@ footer {
 	}
 }
 
-@media ( max-width : 575px) {
-	#section {
-		width: 87%;
-	}
-}
+/* @media ( max-width : 575px) { */
+/* 	#section { */
+/* 		width: 87%; */
+/* 	} */
+/* } */
 
 /* @media ( max-width : 300px) { */
 /* 	#section { */
@@ -276,13 +261,6 @@ footer {
 	border-radius: 5px;
 }
 
-/* .carousel-control-next { */
-/* 	left : 50px; */
-/* } */
-.responsive-text-2 {
-	font-size: 2vw;
-}
-
 @media ( max-width : 800px) {
 	#carousel-inner-1 {
 		display: none;
@@ -297,6 +275,11 @@ footer {
 	#carousel-inner-2 {
 		display: none;
 	}
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
 /* Gallerie*/
 
@@ -326,6 +309,13 @@ footer {
 	background-color: #A9A9A9;
 }
 
+@media (max-width : 1000px) {
+	.card-body {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 #image-product img {
 	width: 120px;
 	height: 90px;
@@ -344,12 +334,14 @@ footer {
 	/* 	height: 80%; */
 }
 
-@media ( max-width : 800px) {
-	.card-body {
+@media (max-width : 1000px) {
+	.card-footer {
 		display: flex;
 		flex-direction: column;
 	}
 }
+
+
 
 .desc {
 	position: relative;
