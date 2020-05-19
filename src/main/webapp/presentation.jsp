@@ -59,7 +59,7 @@
 			<h5 class="mb-0">
 				<button class="btn btn-link collapsed" data-toggle="collapse"
 					data-target="#collapse-2" aria-expanded="false"
-					aria-controls="collapse-2">Chambres pour hamac</button>
+					aria-controls="collapse-2">Chambres pour hamac et structures bois</button>
 			</h5>
 		</div>
 
@@ -76,30 +76,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="card">
-		<div id="collapse-header-n" class="card-header">
-			<h5 class="mb-0">
-				<button class="btn btn-link collapsed" data-toggle="collapse"
-					data-target="#collapse-3" aria-expanded="false"
-					aria-controls="collapse-3">Structures bois</button>
-			</h5>
-		</div>
-
-		<div id="collapse-3" class="collapse" aria-labelledby="headingThree"
-			data-parent="#section">
-			<div id="img-right" class="card-body">
-				<p>
-					<img src="img/mer2.jpg"> Anim pariatur cliche reprehenderit,
-					enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-					moon officia aute, non cupidatat skateboard dolor brunch. Food
-					truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-				</p>
-			</div>
-		</div>
-	</div>
-	<tag:bottom-space />
-<%-- 	<tag:footer /> --%>
 </div>
 
 <tag:footer />

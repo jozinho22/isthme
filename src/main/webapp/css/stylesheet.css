@@ -106,24 +106,25 @@ footer {
 
 @media ( max-width : 800px) {
 	#footer {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-@media ( max-width : 800px) {
-	#footer {
-		position: relative;
+		position: absolute;
 		bottom: -80px;
 	}
 }
 
-/* @media ( max-width : 1000px) { */
-/* 	#footer { */
-/* 		display: flex; */
-/* 		flex-direction: column; */
-/* 	} */
-/* } */
+@media ( max-width : 600px) {
+	#footer {
+		position: absolute;
+		bottom: -180px;
+	}
+}
+
+@media ( max-width : 450px) {
+	#footer {
+		position: absolute;
+		bottom: -210px;
+	}
+}
+
 #click-contact {
 	color: #CD853F;
 }

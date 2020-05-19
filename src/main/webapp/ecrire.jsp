@@ -35,9 +35,7 @@
 					Soumettre son ressenti
 				</button>	
 			</form>
-			<tag:bottom-space />
-			<tag:footer />
 		</div>
 		
-<%-- 		<tag:footer /> --%>
+		<tag:footer />
 		<tag:end />

@@ -79,8 +79,6 @@
 			<a id="carousel-inner-1" class="carousel-control-next" href="#section" data-slide="next"> <span
 				class="carousel-control-next-icon"></span>
 			</a>
-			<tag:bottom-space />
-<%-- 			<tag:footer /> --%>
 		</div>
 		
 		<tag:footer />

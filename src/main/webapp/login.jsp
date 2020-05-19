@@ -31,8 +31,6 @@
 		        </div>
 		      </div>
 		    </div>
-		    <tag:bottom-space />
-		    <tag:footer />
 		  </div>
-		  
+		<tag:footer />  
 		<tag:end /> 

@@ -66,7 +66,6 @@
 				<button id="btn-livre-dor-write" type="button" class="btn">Ecrire
 					son propre ressenti</button>
 			</a>
-			<tag:bottom-space />
 		</div>
 		
 		<script type="text/javascript">
