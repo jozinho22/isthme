@@ -24,7 +24,7 @@
 			</div>
 			<div class="col-12 col-sm-12 col-md-3 text-center">
 				<div class="container text-center">
-					<a href="https://stackoverflow.com/users/6741310/josselin-douineau"
+					<a href="https://stackoverflow.com/users/6741310/jozinho22"
 						target="_blank"> 
 						<img
 						src="https://stackoverflow.com/users/flair/6741310.png?theme=dark"
@@ -34,13 +34,14 @@
 			</div>
 		</div>
 	</div>
+
 </footer>
 
 <div id="popover-content" hidden="true">
 	<h6>Teddy Gicqueau</h6>
 	<h6>06 35 49 03 69</h6>
-	<i onclick="copyText();" class="fa fa-copy"
-		style="font-size: 15px; cursor:hover pointer;"></i>
+<!-- 	<i onclick="copyText();" class="fa fa-copy" -->
+<!-- 		style="font-size: 15px; cursor:hover pointer; display: inline;"></i> -->
 	<h6 id="email" style="display: inline;">contact.isthme@gmail.com</h6>
 </div>
 
@@ -55,6 +56,7 @@
 	});
 
 	function copyText() {
+		console.log('dfds');
 		var textToCopy = document.getElementById("email").textContent;
 		copyStringToClipboard(textToCopy);
 	}
