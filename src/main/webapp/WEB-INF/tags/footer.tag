@@ -25,9 +25,10 @@
 			<div class="col-12 col-sm-12 col-md-3 text-center">
 				<div class="container text-center">
 					<a href="https://stackoverflow.com/users/6741310/josselin-douineau"
-						target="_blank"> <img
+						target="_blank"> 
+						<img
 						src="https://stackoverflow.com/users/flair/6741310.png?theme=dark"
-						width="208" height="58" style="margin-top:5px">
+						width="150" height="40" style="margin-top:15px">
 					</a>
 				</div>
 			</div>

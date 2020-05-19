@@ -2,7 +2,7 @@ body {
 	position: relative;
 	min-height: 100%;
 	min-height: 100vh;
-/* 	flex-direction: column;   */
+	/* 	flex-direction: column;   */
 }
 
 @media ( max-width : 1000px) {
@@ -99,13 +99,19 @@ h4, h5 {
 footer {
 	width: 100%;
 	position: fixed;
-	bottom : 0;
-/* 	height: 80px;  */
-  margin-top:auto;
-
+	bottom: 0;
+	/* 	height: 80px;  */
+	margin-top: auto;
 }
 
-@media ( max-width : 767px) {
+@media ( max-width : 800px) {
+	#footer {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media ( max-width : 800px) {
 	#footer {
 		position: relative;
 		bottom: -80px;
@@ -118,7 +124,6 @@ footer {
 /* 		flex-direction: column; */
 /* 	} */
 /* } */
-
 #click-contact {
 	color: #CD853F;
 }
@@ -202,11 +207,6 @@ footer {
 }
 
 /*section */
-
-/* empty space */
-#empty-space {
-	height: 450px;
-}
 
 /* Présentation */
 #section .card {
@@ -316,7 +316,6 @@ footer {
 /* 		height: 500px; */
 /* 	} */
 /* } */
-
 .card-header {
 	background-color: #343a40;
 	color: rgba(255, 255, 255, .5);
@@ -399,8 +398,8 @@ footer {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
-/* 	-webkit-background-size: 6px 30px; */
-/* 	-moz-background-size: 6px 30px; */
+	/* 	-webkit-background-size: 6px 30px; */
+	/* 	-moz-background-size: 6px 30px; */
 	color: grey;
 	font-size: 20px;
 	position: absolute;
