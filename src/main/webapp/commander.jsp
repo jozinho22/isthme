@@ -71,15 +71,13 @@
 		<div class="card-footer">
 			<input id="total" type="text" class="qty" hidden="true" size="4"
 				value="0" style="padding: 10px; font-size: 16px;">
-				
-			<div class="row">
-				<div class="col-12 col-sm-5 col-md-5 text-center btn-photos"
-					style="margin: 10px">
+			
+			<div class="row justify-content-between">
+				<div class="col-12 col-sm-6 col-md-6 text-center" style="margin:5px">
 					<a href="galerie" class="btn btn-warning">Voir plus de photos</a>
 				</div>
-				<div class="col-12 col-sm-2 col-md-2 text-center"></div>
-				<div class="col-12 col-sm-3 col-md-3 text-center"
-					style="margin: 10px">
+<!-- 				<div class="col-12 col-sm-2 col-md-2 text-center"></div> -->
+				<div class="col-12 col-sm-5 col-md-5 text-center" style="margin:5px">
 					<a id="custom-btn" onclick="displayTotal();"
 						data-target="#centered-modal" data-container="body"
 						data-toggle="modal" data-placement="top" class="btn btn-success">Commander</a>

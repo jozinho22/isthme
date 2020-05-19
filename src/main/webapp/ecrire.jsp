@@ -30,7 +30,6 @@
 					<textarea name="quote" class="form-control"
 						id="textarea-livre-dor" rows="3" placeholder="Votre ressenti"></textarea>
 				</div>
-				
 				<button type="submit" id="btn-livre-dor-write" type="button" class="btn">
 					Soumettre son ressenti
 				</button>	

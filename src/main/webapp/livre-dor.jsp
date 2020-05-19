@@ -7,7 +7,7 @@
 		<tag:begin />
 		<tag:navbar />
 		
-		<div id="section" class="container">
+		<div id="section">
 			<!-- Demo header-->
 			<div class="py-5 text-center">
 				<div class="container py-4 text-white">

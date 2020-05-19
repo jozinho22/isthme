@@ -86,27 +86,29 @@ footer {
 	position: fixed;
 	bottom: 0;
 	/* 	height: 80px;  */
-	margin-top: auto;
+	margin-bottom: 20px;
 }
+
+/* @media ( max-width : 800px) { */
+/* 	footer { */
+/* 		position: absolute; */
+/* 		bottom: -150px; */
+/* 	} */
+/* } */
+
+
 
 @media ( max-width : 800px) {
-	#footer {
+	footer {
 		position: absolute;
-		bottom: -80px;
+		bottom: -100px;
 	}
 }
 
-@media ( max-width : 600px) {
-	#footer {
+@media ( max-width : 576px) {
+	footer {
 		position: absolute;
-		bottom: -180px;
-	}
-}
-
-@media ( max-width : 450px) {
-	#footer {
-		position: absolute;
-		bottom: -210px;
+		bottom: -220px;
 	}
 }
 
@@ -151,11 +153,11 @@ footer {
 	}
 }
 
-@media ( max-width : 800px) {
-	#section {
-		width: 80%;
-	}
-}
+/* @media ( max-width : 800px) { */
+/* 	#section { */
+/* 		width: 80%; */
+/* 	} */
+/* } */
 
 /* @media ( max-width : 575px) { */
 /* 	#section { */
@@ -307,6 +309,7 @@ footer {
 
 .card-body {
 	background-color: #A9A9A9;
+	padding: 0.8rem;
 }
 
 @media (max-width : 1000px) {
@@ -331,7 +334,7 @@ footer {
 /* } */
 .card-footer {
 	background-color: #D3D3D3;
-	/* 	height: 80%; */
+/* 		height: 65px; */
 }
 
 @media (max-width : 1000px) {
@@ -340,8 +343,6 @@ footer {
 		flex-direction: column;
 	}
 }
-
-
 
 .desc {
 	position: relative;
@@ -520,7 +521,13 @@ footer {
 	border: 1px solid grey;
 	background-color: #343a40;
 	color: rgba(255, 255, 255, .5);
-}
+	
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ }
 
 #btn-livre-dor-submit:hover, #btn-livre-dor-write:hover {
 	background-color: #202427;

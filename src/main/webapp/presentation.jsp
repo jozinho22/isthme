@@ -42,7 +42,7 @@
 			data-parent="#section">
 			<div id="img-left" class="card-body">
 				<p>
-					<img src="img/hamac1.jpg"> Anim pariatur cliche
+					<img src="img/hamac5.jpg"> Anim pariatur cliche
 					reprehenderit, enim eiusmod high life accusamus terry richardson ad
 					squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
 					brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
