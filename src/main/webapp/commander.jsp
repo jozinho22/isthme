@@ -84,8 +84,6 @@
 				</div>
 		
 			</div>
-			<tag:bottom-space />
-			<tag:footer />
 		</div>
 		
 		<div class="modal fade" id="centered-modal" tabindex="-1" role="dialog"
@@ -203,5 +201,5 @@
 			}
 		</script>
 		
-<%-- 		<tag:footer /> --%>
+		<tag:footer />
 		<tag:end />

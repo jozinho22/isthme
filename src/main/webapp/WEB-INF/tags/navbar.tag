@@ -12,8 +12,8 @@
 			</li>
 			<li class="nav-item"><a class="nav-link" href="commander">Commander</a>
 			</li>
-			<li class="nav-item"><a class="nav-link" href="livre-d-or">Livre
-					d'or</a></li>
+			<li class="nav-item"><a class="nav-link" href="livre-d-or">Livre d'or</a>
+			</li>
 		</ul>
 	</div>
 </nav>

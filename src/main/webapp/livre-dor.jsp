@@ -67,12 +67,11 @@
 					son propre ressenti</button>
 			</a>
 			<tag:bottom-space />
-			<tag:footer />
 		</div>
 		
 		<script type="text/javascript">
 		
 		</script>
 		
-<%-- 		<tag:footer /> --%>
+		<tag:footer />
 		<tag:end />

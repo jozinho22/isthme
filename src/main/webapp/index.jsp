@@ -1,6 +1,10 @@
 <%@ taglib prefix="tag" tagdir="/WEB-INF/tags"%>
-		
-		<tag:begin />
-		<tag:navbar />
-		<tag:fixed-footer />
-		<tag:end />
+
+<tag:begin />
+<tag:navbar />
+
+<div id="section">
+</div>
+<tag:footer />
+
+<tag:end />

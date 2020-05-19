@@ -80,8 +80,8 @@
 				class="carousel-control-next-icon"></span>
 			</a>
 			<tag:bottom-space />
-			<tag:footer />
+<%-- 			<tag:footer /> --%>
 		</div>
 		
-<%-- 		<tag:footer /> --%>
+		<tag:footer />
 		<tag:end />
