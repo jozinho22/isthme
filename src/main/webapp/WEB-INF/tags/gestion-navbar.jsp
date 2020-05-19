@@ -12,7 +12,10 @@
 		response.sendRedirect("error");
 	}
 	
-	Integer nbAvisRestants = (Integer) session.getAttribute("nbAvisRestants");
+	Integer nbAvisRestants = 0;
+	if(request.getAttribute("nbAvisRestants") != null) {
+		 nbAvisRestants = (Integer) request.getAttribute("nbAvisRestants");
+	}
 %>
 
 <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
