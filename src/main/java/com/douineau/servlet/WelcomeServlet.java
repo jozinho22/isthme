@@ -21,7 +21,6 @@ public class WelcomeServlet extends HttpServlet {
      */
     public WelcomeServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**

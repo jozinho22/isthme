@@ -21,7 +21,6 @@ public class CommanderServlet extends HttpServlet {
      */
     public CommanderServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**

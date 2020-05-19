@@ -26,7 +26,6 @@ public class LivreDorServlet extends HttpServlet {
 	 */
 	public LivreDorServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

@@ -18,6 +18,17 @@
 	</div>
 </footer>
 
+<!-- Stack Over Flow -->
+<footer id="fixed-footer">
+	<div class="pull-right">
+		<a href="https://stackoverflow.com/users/6741310/josselin-douineau"
+			target="_blank" style="margin: 15px"> <img
+			src="https://stackoverflow.com/users/flair/6741310.png?theme=dark"
+			width="208" height="58">
+		</a>
+	</div>
+</footer>
+
 <div id="popover-content" hidden="true">
 	<h6>Teddy Gicqueau</h6>
 	<h6>06 35 49 03 69</h6>

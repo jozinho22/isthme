@@ -24,7 +24,6 @@ public class GestionServlet extends HttpServlet {
 	 */
 	public GestionServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -33,12 +32,8 @@ public class GestionServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		Integer nbAvisRestants = AvisDao.getCount();
-		HttpSession session = request.getSession();
-		session.setAttribute("nbAvisRestants", nbAvisRestants);
-
-		RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
-		rd.forward(request, response);
+		
+		response.sendRedirect("gestion.jsp");
 		
 		}
 
@@ -48,6 +43,13 @@ public class GestionServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		Integer nbAvisRestants = AvisDao.getCount();
+//		HttpSession session = request.getSession();
+		request.setAttribute("nbAvisRestants", nbAvisRestants);
+
+		RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
+		rd.forward(request, response);
 	}
 
 }

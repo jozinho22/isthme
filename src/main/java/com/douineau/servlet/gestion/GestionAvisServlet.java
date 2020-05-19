@@ -21,15 +21,15 @@ import com.douineau.entity.Avis;
 public class GestionAvisServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	private static List<Avis> avisRestants;
+	private static List<Avis> avisToCheck;
+	
+	private Integer nbAvisRestants;
 
-	private Integer index;
-		/**
+	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
 	public GestionAvisServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -38,34 +38,22 @@ public class GestionAvisServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
-		if(avisRestants == null) {
-			avisRestants = AvisDao.get10LatestNotReadAvis();
-			request.setAttribute("index", 0);
+
+		if (avisToCheck == null) {
+			avisToCheck = AvisDao.get10LatestNotReadAvis();
 		}
 		
-		if("triAvis".equals(request.getAttribute("action"))) {
-			index = (Integer) request.getAttribute("index");
-			avisRestants.remove(avisRestants.get(index));
-			request.setAttribute("index", index + 1);	
-		} 
-
-		if(avisRestants.size() == 0) {
-			avisRestants = AvisDao.get10LatestNotReadAvis();
-			//S'il n'en reste plus
-			if(avisRestants.size() == 0) {
-				request.removeAttribute("avisRestants");
-				RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
-				rd.forward(request, response);
-			} 
-		}	
-		
-		request.setAttribute("nbAvisRestants", Integer.valueOf(avisRestants.size()));
-		request.setAttribute("avisRestants", avisRestants);
+		nbAvisRestants = AvisDao.getCount();
+		setAttributes(request);
 
 		RequestDispatcher rd = request.getRequestDispatcher("gestion-avis.jsp");
 		rd.forward(request, response);
 
+	}
+
+	private void setAttributes(HttpServletRequest request) {
+		request.setAttribute("nbAvisRestants", nbAvisRestants);
+		request.setAttribute("avis", avisToCheck.get(0));
 	}
 
 	/**
@@ -74,7 +62,24 @@ public class GestionAvisServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		avisToCheck.remove(avisToCheck.get(0));
+		nbAvisRestants -= 1 ;
+		
+		if (avisToCheck.size() == 0) {
+			avisToCheck = AvisDao.get10LatestNotReadAvis();
+			// S'il n'en reste plus
+			if (avisToCheck.size() == 0) {
+				request.setAttribute("nbAvisRestants", nbAvisRestants);
+				RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
+				rd.forward(request, response);
+			}
+		}
 
+		setAttributes(request);
+		
+		RequestDispatcher rd = request.getRequestDispatcher("gestion-avis.jsp");
+		rd.forward(request, response);
 	}
 
 }

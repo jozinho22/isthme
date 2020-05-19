@@ -25,7 +25,6 @@ public class EcrireServlet extends HttpServlet {
 	 */
 	public EcrireServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

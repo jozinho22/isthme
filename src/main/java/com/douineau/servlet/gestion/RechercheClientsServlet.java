@@ -21,7 +21,6 @@ public class RechercheClientsServlet extends HttpServlet {
 	 */
 	public RechercheClientsServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

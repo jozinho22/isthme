@@ -26,7 +26,6 @@ public class LoginServlet extends HttpServlet {
      */
     public LoginServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -40,7 +39,6 @@ public class LoginServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		String login = request.getParameter("login");
 		String password = request.getParameter("password");
 		
@@ -49,10 +47,7 @@ public class LoginServlet extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("session-login", login);
 			
-			Integer nbAvisRestants = AvisDao.getCount();
-			session.setAttribute("nbAvisRestants", nbAvisRestants);
-			
-			RequestDispatcher rd = request.getRequestDispatcher("gestion.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("gestion");
 			rd.forward(request, response);
 		} else {
 			response.sendRedirect("login.jsp");

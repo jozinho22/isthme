@@ -19,7 +19,6 @@ public class ErrorServlet extends HttpServlet {
      */
     public ErrorServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**

@@ -17,19 +17,16 @@
 		<div class="carousel-inner px-5 pb-4">
 			<div class="carousel-item active">
 				<blockquote class="blockquote border-0 p-0">
-				<%
-					Integer index = (Integer) session.getAttribute("index");
-				%>
-					<b>${avisRestants.get(index).author} </b>
+					<b>${avis.author} </b>
 					<br> 
-					<cite title="Source Title">${avisRestants.get(index).quote}</cite>
+					<cite title="Source Title">${avis.quote}</cite>
 				</blockquote>
 			</div>
 		</div>
 
 		<div class="pull-right" style="margin: 10px">
 			<form action="valider-avis" method="POST">
-				<input name="id" value="${avisRestants.get(index).id}">
+				<input name="id" value="${avis.id}">
 				<button style="display: inline-block;" class="btn btn-success"
 					type="submit">Valider</button>
 			</form>
@@ -37,7 +34,7 @@
 
 		<div class="pull-left" style="margin: 10px">
 			<form action="refuser-avis" method="POST">
-				<input type="text" name="id" value="${avisRestants.get(index).id}" hidden="true">
+				<input type="text" name="id" value="${avis.id}" hidden="true">
 				<button style="display: inline-block;" class="btn btn-danger"
 					type="submit">Refuser</button>
 			</form>
@@ -45,19 +42,5 @@
 
 	</div>
 </div>
-
-<script>
-// 			function passNbNext(elem) {
-// 				var index = parseInt(document.getElementById("index").value);
-// 				document.getElementById("index").value = index + 1;
-// 				console.log(document.getElementById("index").value);
-// 				console.log(document.getElementById("index"));
-// 			}
-// 			function passNbPrev(elem) {
-// 				var index = parseInt(document.getElementById("index").value);
-// 				document.getElementById("index").value = index - 1;
-// 				console.log(document.getElementById("index").value);
-// 			}
-		</script>
 
 <tag:end />

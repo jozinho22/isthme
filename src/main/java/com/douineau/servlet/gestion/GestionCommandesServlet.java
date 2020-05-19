@@ -27,7 +27,6 @@ public class GestionCommandesServlet extends HttpServlet {
 	 */
 	public GestionCommandesServlet() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

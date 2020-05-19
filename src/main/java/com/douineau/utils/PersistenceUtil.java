@@ -15,7 +15,6 @@ public class PersistenceUtil {
 		try {
 			emf = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME, ConfigReader.getProperties("/db.properties"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	   
