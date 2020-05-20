@@ -6,10 +6,8 @@
 				<div id="socials" class="container text-center">
 					<a href="https://www.instagram.com/isthme.r/?hl=fr" target="_blank">
 						<i class="fa fa-instagram" style="font-size: 36px"></i>
-					</a> <a href="https://www.facebook.com/raymond.campincar"
-						target="_blank"> <i class="fa fa-facebook"
-						style="font-size: 36px"></i>
-					</a> <a href="mailto:isthme.contact@gmail.com"> <i
+					</a> 
+					<a href="mailto:isthme.contact@gmail.com"> <i
 						class="fa fa-envelope" style="font-size: 36px"></i>
 					</a> <a href="https://api.whatsapp.com/send?phone=33188200022"
 						target="_blank"> <i class="fa fa-whatsapp"
@@ -36,7 +34,7 @@
 
 <div id="popover-content" hidden="true" style="display: flex;">
 	<h6 id="email" style="display: inline;">isthme.contact@gmail.com</h6>
-	<h6 id="email" style="display: inline;">(site actuellement en construction)</h6>
+	<h6 id="email" style="display: inline;">(en construction)</h6>
 </div>
 
 <script>
