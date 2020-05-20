@@ -23,7 +23,7 @@ public class GestionAvisServlet extends HttpServlet {
 
 	private static List<Avis> avisToCheck;
 	
-	private Integer nbAvisRestants;
+	private static Integer nbAvisRestants;
 
 	/**
 	 * @see HttpServlet#HttpServlet()

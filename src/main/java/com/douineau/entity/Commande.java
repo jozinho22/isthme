@@ -21,13 +21,13 @@ public class Commande {
 
 	private int montant;
 
-	@Column(name = "created_at")
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date createdAt;
-	
 	@ManyToOne
 	@JoinColumn(name = "client_id")
 	private Client client;
+	
+	@Column(name = "created_at")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date createdAt;
 
 	public Commande() {
 
