@@ -5,10 +5,10 @@
 	</a>
 	<div id="collapse-menu-nav" class="collapse navbar-collapse"
 		id="navbarNav">
-		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="galerie">Galerie</a>
-			</li>
-		</ul>
+<!-- 		<ul class="navbar-nav"> -->
+<!-- 			<li class="nav-item"><a class="nav-link" href="galerie">Galerie</a> -->
+<!-- 			</li> -->
+<!-- 		</ul> -->
 	</div>
 </nav>
 <!-- </div> -->

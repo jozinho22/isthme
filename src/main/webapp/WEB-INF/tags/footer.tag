@@ -3,10 +3,7 @@
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-3 text-center"></div>
 			<div class="col-12 col-sm-12 col-md-6 text-center">
-				<div class="container text-center">
-					<small style="color: black;">Copyright &copy; Isthme 2020</small> <br>
-				</div>
-				<div class="container text-center">
+				<div id="socials" class="container text-center">
 					<a href="https://www.instagram.com/isthme.r/?hl=fr" target="_blank">
 						<i class="fa fa-instagram" style="font-size: 36px"></i>
 					</a> <a href="https://www.facebook.com/raymond.campincar"
@@ -17,7 +14,7 @@
 					</a> <a href="https://api.whatsapp.com/send?phone=33188200022"
 						target="_blank"> <i class="fa fa-whatsapp"
 						style="font-size: 36px"></i>
-					</a> <i id="click-contact" class="fa fa-question"
+					</a> <i class="fa fa-question"
 						style="font-size: 36px" data-container="body"
 						data-toggle="popover" data-placement="top"> </i>
 				</div>
@@ -26,7 +23,7 @@
 				<div class="container text-center">
 					<a href="https://stackoverflow.com/users/6741310/jozinho22"
 						target="_blank"> 
-						<img
+						<img id="img" style="opacity : 0.1"
 						src="https://stackoverflow.com/users/flair/6741310.png?theme=dark"
 						width="150" height="40" style="margin-top:15px">
 					</a>
@@ -38,11 +35,7 @@
 </footer>
 
 <div id="popover-content" hidden="true">
-	<h6>Teddy Gicqueau</h6>
-	<h6>06 35 49 03 69</h6>
-<!-- 	<i onclick="copyText();" class="fa fa-copy" -->
-<!-- 		style="font-size: 15px; cursor:hover pointer; display: inline;"></i> -->
-	<h6 id="email" style="display: inline;">contact.isthme@gmail.com</h6>
+	<h6 id="email" style="display: inline;">isthme.contact@gmail.com</h6>
 </div>
 
 <script>
@@ -79,5 +72,10 @@
 		document.execCommand('copy');
 		// Remove temporary element
 		document.body.removeChild(el);
+	}
+	
+	function displayImage() {
+		var img = document.getElementById("img").style.display = 'block';
+		
 	}
 </script>

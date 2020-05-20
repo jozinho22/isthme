@@ -52,8 +52,8 @@ h4, h5 {
 
 /* navbar */
 #navbar {
-	border-bottom: 2px solid rgba(255, 255, 255, .5);
-	border-top: 2px solid rgba(255, 255, 255, .5);
+/* 	border-bottom: 2px solid rgba(255, 255, 255, .5); */
+/* 	border-top: 2px solid rgba(255, 255, 255, .5); */
 	/*   	margin-bottom: 150px; */
 	/* overflow: auto; */
 	position: relative;
@@ -117,18 +117,17 @@ footer {
 	}
 }
 
-#click-contact {
-	color: #CD853F;
-}
+/* #click-contact { */
+/* 	color: #CD853F; */
+/* } */
 
-#click-contact:hover {
-	color: #A0522D;
-	cursor: pointer;
-}
+/* #click-contact:hover { */
+/* 	color: #A0522D; */
+/* 	cursor: pointer; */
+/* } */
 
-.credits {
-	text-align: center;
-	color: rgba(255, 255, 255, .5);
+#socials i {
+	color : #FFD700	;
 }
 
 /* #socials { */
