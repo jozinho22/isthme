@@ -21,7 +21,7 @@
 				<div class="container text-center">
 					<a href="https://stackoverflow.com/users/6741310/jozinho22"
 						target="_blank"> 
-						<img id="img" style="opacity : 0.1"
+						<img onmouseover="displayImage(this)" onmouseout="hideImage(this)" style="opacity : 0.1"
 						src="https://stackoverflow.com/users/flair/6741310.png?theme=dark"
 						width="150" height="40" style="margin-top:15px">
 					</a>
@@ -73,8 +73,14 @@
 		document.body.removeChild(el);
 	}
 	
-	function displayImage() {
-		var img = document.getElementById("img").style.display = 'block';
+	function displayImage(img) {
+		console.log('ok');
+		img.style.opacity = '1';
+		
+	}
+	function hideImage(img) {
+		console.log('ok');
+		img.style.opacity = '0.1';
 		
 	}
 </script>
