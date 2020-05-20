@@ -34,8 +34,9 @@
 
 </footer>
 
-<div id="popover-content" hidden="true">
+<div id="popover-content" hidden="true" style="display: flex;">
 	<h6 id="email" style="display: inline;">isthme.contact@gmail.com</h6>
+	<h6 id="email" style="display: inline;">(site actuellement en construction)</h6>
 </div>
 
 <script>
